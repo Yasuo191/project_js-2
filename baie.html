@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện Ảnh Tương tác & Tiếp cận</title>
+    <link rel="stylesheet" href="baie.css">
+</head>
+<body onload="addTabindex()">
+
+    <header>
+        <h1>Thư viện Ảnh Sáu Chiều</h1>
+    </header>
+
+    <div id="image-gallery">
+        <div id="image">
+            Di chuột qua hoặc lấy tiêu điểm (focus) vào một hình ảnh bên dưới để hiển thị ở đây.
+        </div>
+
+        <div class="thumbnail-container">
+            <img class="thumbnail" 
+                 src="pic1.jpg" 
+                 alt="Chân dung kiến trúc cổ kính" 
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+
+            <img class="thumbnail" 
+                 src="pic2.jpg" 
+                 alt="Một ly cà phê buổi sáng" 
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+
+            <img class="thumbnail" 
+                 src="pic3.jpg" 
+                 alt="Thiên nhiên hùng vĩ mùa thu" 
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+
+            <img class="thumbnail" 
+                 src="pic4.jpg" 
+                 alt="Chủ nghĩa tối giản trong thiết kế" 
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+                 
+            <img class="thumbnail" 
+                 src="pic5.jpg" 
+                 alt="Cảnh vật ban đêm thành phố" 
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+
+            <img class="thumbnail" 
+                 src="pic6.jpg" 
+                 alt="Một bó hoa rực rỡ sắc màu" 
+                 onmouseover="upDate(this)"
+                 onmouseout="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </div>
+    </div>
+
+    <script src="baie.js"></script>
+</body>
+</html>

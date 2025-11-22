@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#image-gallery {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Vùng hiển thị ảnh lớn */
+#image {
+    width: 100%;
+    height: 450px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap; /* Đảm bảo đủ chỗ cho 6 ảnh */
+}
+
+.thumbnail {
+    width: 120px; /* Điều chỉnh kích thước cho 6 ảnh */
+    height: 90px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+/* Hiệu ứng focus/hover */
+.thumbnail:hover, .thumbnail:focus {
+    border-color: #007bff;
+    transform: scale(1.08);
+    outline: none; /* Loại bỏ outline mặc định để Wave/AxE không báo lỗi */
+}
